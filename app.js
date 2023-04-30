@@ -3,6 +3,7 @@ require('dotenv').config()
 var express = require('express');
 
 var cookieParser = require('cookie-parser');
+var crypto = require('crypto');
 var logger = require('morgan');
 var path = require('path');
 var session = require('express-session');
@@ -18,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'frontend', 'static')));
 app.use(
     session(
         {
-            secret: process.env.SECRET,
+            secret: crypto.randomBytes(20).toString('hex'),
             resave: false,
             saveUninitialized: true
         }
