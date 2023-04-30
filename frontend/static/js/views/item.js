@@ -3,7 +3,7 @@ import View from "./view.js";
 export default class extends View {
     constructor(params) {
         super(params);
-        this.setTitle(`Item ${this.params.id}`);
+        this.setTitle(`item ${this.params.id}`);
     }
 
 
