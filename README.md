@@ -6,10 +6,10 @@ Very much a rip-off of the [dcode](https://github.com/dcode-youtube/single-page-
 including [W3.css](https://www.w3schools.com/w3css/default.asp) for styling
 
 ## Structure
-- [static](static/) - static files
-- [static/css/](static/css/) - css files
-- [static/js](static/js/) - js files
-- [static/js/views/](static/js/views/) - js files for different "views"
+- [frontend/static](frontend/static/) - static files
+- [frontend/static/css/](frontend/static/css/) - css files
+- [frontend/static/js](frontend/static/js/) - js files
+- [frontend/static/js/views/](frontend/static/js/views/) - js files for different "views"
 
 
 ## Usage
