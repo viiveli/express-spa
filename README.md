@@ -6,10 +6,12 @@ Very much a rip-off of the [dcode](https://github.com/dcode-youtube/single-page-
 including [W3.css](https://www.w3schools.com/w3css/default.asp) for styling
 
 ## Structure
-- [frontend/static](frontend/static/) - static files
-- [frontend/static/css/](frontend/static/css/) - css files
-- [frontend/static/js](frontend/static/js/) - js files
-- [frontend/static/js/views/](frontend/static/js/views/) - js files for different "views"
+- [app.js](app.js) - express app
+- [bin/www](bin/www) - express server
+- [spa/index.html](spa/index.html) - main html page with "app" div
+- [spa/login.html](spa/login.html) - login page
+- [spa/static](spa/static/) - static content like css, js, images etc
+- [spa/static/js/views/](spa/static/js/views/) - js files for different "views"
 
 
 ## Usage

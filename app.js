@@ -12,7 +12,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'frontend', 'static')));
+app.use(express.static(path.join(__dirname, 'spa', 'static')));
 
 app.use(
     session(
@@ -74,11 +74,11 @@ app.get('/logout', function (req, res, next) {
 })
 
 app.get("/*", isAuthenticated, (req, res) => {
-    res.sendFile(path.resolve("frontend", "index.html"));
+    res.sendFile(path.resolve("spa", "index.html"));
 });
 
 app.get('/*', function (req, res) {
-    res.sendFile(path.resolve("frontend", "login.html"));
+    res.sendFile(path.resolve("spa", "login.html"));
 })
   
 module.exports = app;
